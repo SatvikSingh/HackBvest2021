@@ -1,0 +1,752 @@
+@media screen and (max-width: 1025px) {
+  .accordian {
+    width: 850px; height: 320px;
+    overflow: hidden;
+    background-color: -webkit-linear-gradient(to bottom right, #050e3b, #33032f);
+    
+    /*Time for some styling*/
+    margin: 100px auto;
+    box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.35);
+    -webkit-box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.35);
+    -moz-box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.35);
+  }
+  
+  /*A small hack to prevent flickering on some browsers*/
+  .accordian ul {
+    width: 2000px;
+    /*This will give ample space to the last item to move
+    instead of falling down/flickering during hovers.*/
+  }
+  
+  h1[id="timeline"] {
+    font-weight: bold;
+    font-family: Poppins;
+    text-align: center;
+    margin-top: 10%;
+  }
+  
+  .accordian li {
+    position: relative;
+    display: block;
+    width: 100px;
+    float: left;
+    
+    border-left: 1px solid #888;
+    
+    box-shadow: 0 0 25px 10px rgba(0, 0, 0, 0.5);
+    -webkit-box-shadow: 0 0 25px 10px rgba(0, 0, 0, 0.5);
+    -moz-box-shadow: 0 0 25px 10px rgba(0, 0, 0, 0.5);
+    
+    /*Transitions to give animation effect*/
+    transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    /*If you hover on the images now you should be able to 
+    see the basic accordian*/
+  }
+  
+  /*Reduce with of un-hovered elements*/
+  .accordian ul:hover li {width: 0px;}
+  /*Lets apply hover effects now*/
+  /*The LI hover style should override the UL hover style*/
+  .accordian ul li:hover {width: 640px;}
+  
+  
+  .accordian li img {
+    display: block;
+    width: 640px;
+  }
+  
+  /*Image title styles*/
+  .image_title {
+    background: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    left: 0; bottom: 0;	
+    width: 640px;	
+  
+  }
+  .image_title a {
+    display: block;
+    color: #fff;
+    text-decoration: none;
+    padding: 7px 5px;
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 786px) {
+  .illustration {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .main-nav {
+    position: relative;
+    background: linear-gradient(to bottom right, #050e3b, #33032f);
+    padding: 20px 0;
+    transform: scaleY(0) rotateX(-90deg);
+    transition: transform .3s cubic-bezier(0,1.84,.88,.78);
+    transform-origin: top;
+  }
+
+  .hero-section {
+    height: 90vh;
+    position: relative;
+  }
+
+  .wiehack {
+    position: absolute;
+    z-index: 2;
+    font-size: 1.2rem;
+    padding: 2px;
+    left: 5%;
+    top: 60%;
+    transform: translateY(-50%);
+  }
+
+  .wiehack h1 {
+    font-family: Poppins;
+    margin-bottom: 10px;
+    color: #fff;
+  }
+
+  .wiehack h3 {
+    font-family: Poppins;
+    padding-bottom: 5px;
+    color: #fff;
+  }
+
+  .wiehack h5 {
+    font-size: 18px;
+    font-family: Poppins;
+    color: #fff;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+  }
+
+  .illustration {
+    position: relative;
+    z-index: 0;
+    display: none;
+  }
+
+  .wiehack-img {
+    width: 30px;
+    position: absolute;
+    top: 35px;
+    left: 5%;
+    z-index: 0;
+  }
+
+  .icons {
+    padding: 15px;
+    padding-left: 0px;
+    margin-top: 10px;
+  }
+
+  .about-section {
+    height: 115vh;
+    margin-top: 0;
+    background: white;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    font-size: 1rem;
+  }
+
+  .highlights {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 0%;
+    margin-right: 10%;
+  }
+
+  .highlights h1 {
+    padding: 25px;
+    font-size: 32px;
+    font-family: Poppins;
+    text-align: center;
+  }
+
+  #countdown {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 95%;
+    margin-bottom: 10px;
+    margin-left: 3%;
+  }
+
+  #countdown li {
+   display: inline-block;
+    font-size: 12px;
+    list-style-type: none;
+    padding: 5px 15px;
+    text-transform: uppercase;
+    color: #fff;
+    border-radius: 5px;
+  }
+
+  #countdown li span {
+    display: block;
+    font-size: 30px;
+  }
+
+  .prize {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 20px;
+  }
+
+  .prize-card {
+    font-size: 18px;
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    height: 75px;
+    margin: 10px;
+    margin-bottom: 0;
+    background-color: pink;
+  }
+
+  .cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 40px;
+  }
+
+  #current {
+    padding-top: 15rem;
+    margin-top: 20%;
+    font-family: Poppins;
+  }
+  #past {
+    margin-top: 20%;
+    font-family: poppins;
+    color: black;
+  }
+
+  .stat {
+    padding-top: 20px;
+    margin-top: 30px;
+  }
+/* 
+  .card {
+    width: 40%;
+    height: 150px;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #eeeeee;
+  } */
+
+/* 
+  .card i {
+    padding: 25px;
+    font-size: 2.5em;
+  }
+
+  .card h3 i {
+    font-size: 2.5rem;
+  } */
+
+  .schedule-section {
+    height: 110vh;
+    margin-bottom: 300px;
+    font-size: 1rem;
+  }
+
+  .themes-section {
+    height: 16vh;
+    margin-top: 30px;
+    background: linear-gradient(to right bottom, rgb(41, 3, 63), rgb(105, 3, 109));
+  
+  }
+
+  .themes-section h1 {
+    color: #fff;
+    font-family: Poppins;
+    margin-top: 60px;
+    padding-top: 15%;
+  }
+
+
+  #carouselExampleIndicators {
+    margin-top: 35%;
+  }
+
+  /* .theme-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .theme-card {
+    width: 80%;
+    height: 220px;
+    margin: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #eeeeee;
+  } */
+
+  .event-schedule {
+    margin-top: 20px;
+  }
+
+  .event-schedule h1 {
+    font-family: Poppins;
+  }
+
+  .schedule-section-section {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    width: 95%;
+    background-color: white;
+  }
+
+  .section-1 {
+    width: 90%;
+    margin: 30px;
+    margin-top: 30px;
+  }
+
+  .section-1 h2 {
+    font-size: 1.3em;
+    margin-bottom: 25px;
+  }
+
+  .partition {
+    padding: 0;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 100%;
+    border-top: 2px black solid;
+  }
+
+  .section-2 {
+    width: 90%;
+    margin: 30px;
+    margin-top: 30px;
+  }
+
+  .section-2 h2 {
+    font-size: 1.3em;
+    margin-bottom: 25px;
+  }
+
+  .events-section {
+    position: relative;
+    display: flex;
+    width: 95%;
+    margin-top: 10px;
+    justify-content: center;
+    font-size: 1rem;
+    background-color: #eeeeee;
+  }
+
+  .events {
+    margin-top: 20px;
+  }
+
+  .events h1 {
+    font-family: Poppins;
+  }
+
+  .events-section-section {
+    width: 100%;
+    bottom: 0;
+  }
+
+  .parent {
+    margin: 10px 0px;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(12, 1fr);
+  }
+
+  .event-card {
+    width: 100%;
+    height: 9vh;
+    border: 1px gray solid;
+  }
+
+  .event-card h2 {
+    color: white;
+    font-size: 22px;
+    font-family: Poppins;
+  }
+
+  .ad-event-card {
+    width: 100%;
+    height: 9vh;
+    border: 1px gray solid;
+  }
+
+  .ad-event-card h2 {
+    color: white;
+    font-size: 20px;
+    font-family: Poppins;
+  }
+
+  .events-section-section {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    height: 90vh;
+    width: 100%;
+    bottom: 0;
+    background-color: white;
+  }
+
+  #timeline {
+    height: 480px;
+    width: 380px;
+  }
+
+  .rainbow {
+    margin-top: 15%;
+    left: 0.1% !important;
+    margin-left: -10rem;
+  }
+
+  .sponsors-section {
+    height: 50vh;
+  }
+
+  .sponsors-section-section {
+    width: 95%;
+    font-size: 1rem;
+  }
+
+  .our-sponsors {
+    margin-top: 15rem;
+  }
+
+  .past-sponsors {
+    margin-top: 2%;
+    padding-bottom: 0px;
+  }
+
+  .sponsors h1 {
+    font-family: Poppins;
+  }
+
+  .sponsors {
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+  .sponsors-list {
+    height: 40vh;
+  }
+
+  .sponsors-list-list {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+  .sponsors-list-list h5 {
+    font-size: 20px;
+  }
+
+  .mentors {
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+  .mentors h1 {
+    font-family: Poppins;
+  }
+
+  .mentors-list {
+    height: 80vh;
+    width: 100%;
+    background-color: lightgrey;
+  }
+
+  #faq {
+    font-family: poppins;
+    font-weight: bold;
+  }
+
+  #faq-section .container {
+    width: 100%;
+  }
+  * {
+    margin: 0; 
+    padding: 0;
+  }
+  body {
+    font-family: arial, verdana, tahoma;
+  }
+  
+  /*Time to apply widths for accordian to work
+  Width of image = 640px
+  total images = 5
+  so width of hovered image = 640px
+  width of un-hovered image = 40px - you can set this to anything
+  so total container width = 640 + 40*4 = 800px;
+  default width = 800/5 = 160px;
+  */
+  
+  .accordian {
+    width: 640px; height: 320px;
+    overflow: hidden;
+    background-color: -webkit-linear-gradient(to bottom right, #050e3b, #33032f);;
+    
+    /*Time for some styling*/
+    margin: 100px auto;
+    box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.35);
+    -webkit-box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.35);
+    -moz-box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.35);
+  }
+  
+  /*A small hack to prevent flickering on some browsers*/
+  .accordian ul {
+    width: 2000px;
+    /*This will give ample space to the last item to move
+    instead of falling down/flickering during hovers.*/
+  }
+  
+  h1[id="timeline"] {
+    font-weight: bold;
+    font-family: Poppins;
+    text-align: center;
+    margin-top: 10%;
+  }
+  
+  .accordian li {
+    position: relative;
+    display: block;
+    width: 75px;
+    float: left;
+    
+    border-left: 1px solid #888;
+    
+    box-shadow: 0 0 25px 10px rgba(0, 0, 0, 0.5);
+    -webkit-box-shadow: 0 0 25px 10px rgba(0, 0, 0, 0.5);
+    -moz-box-shadow: 0 0 25px 10px rgba(0, 0, 0, 0.5);
+    
+    /*Transitions to give animation effect*/
+    transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    /*If you hover on the images now you should be able to 
+    see the basic accordian*/
+  }
+  
+  /*Reduce with of un-hovered elements*/
+  .accordian ul:hover li {width: 0px;}
+  /*Lets apply hover effects now*/
+  /*The LI hover style should override the UL hover style*/
+  .accordian ul li:hover {width: 640px;}
+  
+  
+  .accordian li img {
+    display: block;
+    width: 640px;
+  }
+  
+  /*Image title styles*/
+  .image_title {
+    background: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    left: 0; bottom: 0;	
+    width: 640px;	
+  
+  }
+  .image_title a {
+    display: block;
+    color: #fff;
+    text-decoration: none;
+    padding: 10px;
+    font-size: 16px;
+  }
+  
+  #freepik {
+    text-align: center;
+    display: block;
+  }
+
+}
+
+#register {
+  margin-top: 10px;
+}
+
+@media screen and (max-width: 415px) {
+  .accordian {
+    width: 640px; height: 210px;
+    overflow: hidden;
+    background-color: -webkit-linear-gradient(to bottom right, #050e3b, #33032f);
+    
+    /*Time for some styling*/
+    margin: 100px auto;
+    box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.35);
+    -webkit-box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.35);
+    -moz-box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.35);
+  }
+  
+  /*A small hack to prevent flickering on some browsers*/
+  .accordian ul {
+    width: 2000px;
+    /*This will give ample space to the last item to move
+    instead of falling down/flickering during hovers.*/
+  }
+  
+  h1[id="timeline"] {
+    font-weight: bold;
+    font-family: Poppins;
+    text-align: center;
+    margin-top: 10%;
+  }
+  
+  .accordian li {
+    position: relative;
+    display: block;
+    width: 50px;
+    float: left;
+    
+    border-left: 1px solid #888;
+    
+    box-shadow: 0 0 25px 10px rgba(0, 0, 0, 0.5);
+    -webkit-box-shadow: 0 0 25px 10px rgba(0, 0, 0, 0.5);
+    -moz-box-shadow: 0 0 25px 10px rgba(0, 0, 0, 0.5);
+    
+    /*Transitions to give animation effect*/
+    transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    /*If you hover on the images now you should be able to 
+    see the basic accordian*/
+  }
+  
+  /*Reduce with of un-hovered elements*/
+  .accordian ul:hover li {width: 0px;}
+  /*Lets apply hover effects now*/
+  /*The LI hover style should override the UL hover style*/
+  .accordian ul li:hover {width: 414px;}
+  
+  
+  .accordian li img {
+    display: block;
+    width: 414px;
+  }
+  
+  /*Image title styles*/
+  .image_title {
+    background: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    left: 0; bottom: 0;	
+    width: 640px;	
+  
+  }
+  .image_title a {
+    display: block;
+    color: #fff;
+    text-decoration: none;
+    padding: 10px;
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 376px) {
+  .accordian {
+    width: 640px; height: 180px;
+    overflow: hidden;
+    background-color: -webkit-linear-gradient(to bottom right, #050e3b, #33032f);
+    
+    /*Time for some styling*/
+    margin: 100px auto;
+    box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.35);
+    -webkit-box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.35);
+    -moz-box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.35);
+  }
+  
+  /*A small hack to prevent flickering on some browsers*/
+  .accordian ul {
+    width: 2000px;
+    /*This will give ample space to the last item to move
+    instead of falling down/flickering during hovers.*/
+  }
+  
+  h1[id="timeline"] {
+    font-weight: bold;
+    font-family: Poppins;
+    text-align: center;
+    margin-top: 10%;
+  }
+  
+  .accordian li {
+    position: relative;
+    display: block;
+    width: 45px;
+    float: left;
+    
+    border-left: 1px solid #888;
+    
+    box-shadow: 0 0 25px 10px rgba(0, 0, 0, 0.5);
+    -webkit-box-shadow: 0 0 25px 10px rgba(0, 0, 0, 0.5);
+    -moz-box-shadow: 0 0 25px 10px rgba(0, 0, 0, 0.5);
+    
+    /*Transitions to give animation effect*/
+    transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    /*If you hover on the images now you should be able to 
+    see the basic accordian*/
+  }
+  
+  /*Reduce with of un-hovered elements*/
+  .accordian ul:hover li {width: 0px;}
+  /*Lets apply hover effects now*/
+  /*The LI hover style should override the UL hover style*/
+  .accordian ul li:hover {width: 360px;}
+  
+  
+  .accordian li img {
+    display: block;
+    width: 360px;
+  }
+  
+  /*Image title styles*/
+  .image_title {
+    background: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    left: 0; bottom: 0;	
+    width: 640px;	
+  
+  }
+  .image_title a {
+    display: block;
+    color: #fff;
+    text-decoration: none;
+    padding: 7px 5px;
+    font-size: 16px;
+    margin-right: 40%;
+  }
+}
+
+
+
+
+
